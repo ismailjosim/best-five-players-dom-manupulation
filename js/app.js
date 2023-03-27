@@ -57,9 +57,9 @@ btnCalculate.addEventListener('click', function () {
     const totalPlayer = playerListNumber * perPlayerCost;
 
     if (selectPlayerList.length < 1) {
-        alert('Player is not added ⚠');
+        alert('Player is not added ⚠️');
     } else if (isNaN(perPlayerCost) === true) {
-        alert('PLEASE! Add A Valid Number ⚠');
+        alert('PLEASE! Add A Valid Number ⚠️');
     } else {
         totalPerPlayerExp.innerText = totalPlayer;
     }
@@ -72,11 +72,11 @@ btnTotalCalc.addEventListener('click', function () {
     const TotalBalance = playerPerCost + managerCost + coachCost;
 
     if (isNaN(playerPerCost) === true) {
-        alert('Per Player Expenses is not Valid ⚠');
+        alert('⚠️ Per Player Expenses is not Valid');
     } else if (isNaN(managerCost) === true) {
-        alert('⚠ PLEASE! Add A Valid Manager Amount');
+        alert('⚠️ Add A Valid Manager Amount');
     } else if (isNaN(coachCost) === true) {
-        alert('⚠ Coach Fees is not Valid');
+        alert('⚠️ Coach Fees is not Valid');
     }
     else {
         finalPlayerExp.innerText = TotalBalance;
